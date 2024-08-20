@@ -1,0 +1,2 @@
+# Amazon
+Responsive Amazon Clone
