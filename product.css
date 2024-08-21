@@ -264,7 +264,7 @@ body
     display: grid;
     grid-template-columns: auto auto;
     gap: 4px;
-    font-size: 11px;
+    font-size: 13px;
     color: #565656;
     margin-top: 15px;
 }
