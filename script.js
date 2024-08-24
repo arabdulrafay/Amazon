@@ -47,3 +47,18 @@ for (const item of scrollContainer) {
         item.scrollLeft += evt.deltaY;
     })
 }
+
+window.onload = function()
+{
+    setTimeout(function()
+{
+    alert(`                         Important Note : Must read 
+    "Only these pages are created, and they are working properly."
+
+
+        Home Page, Signin Page, Signup Page, Cart Page, Headphone Page, Black T-Shirt Page, Water Bottle Page, and 10 kg Dumble Page.....
+
+
+                            Now see my designing & enjoy.....`)
+})
+}
