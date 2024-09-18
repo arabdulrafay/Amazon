@@ -5,12 +5,13 @@
     <link rel="shortcut icon" type="icon" href="assets/femix_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Amazon</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
 
-    <nav>
+    <nav data-aos="fade-down">
         <a href="index.html" class="logo">
           <img src="assets/amazon_logo.png" width="100" alt=".." />
         </a>
@@ -65,7 +66,7 @@
         </a>
       </nav>
   
-      <div class="nav-bottom">
+      <div class="nav-bottom" data-aos="fade-down">
         <div>
           <img src="assets/menu_icon.png" width="25" alt=".." />
           <p>All</p>
@@ -78,7 +79,7 @@
       </div>
 
       <div class="cart">
-        <div class="cart-left">
+        <div class="cart-left" data-aos="fade-right">
             <h1>Shopping Cart</h1>
             <hr>
             <div class="product-cart-list">
@@ -169,7 +170,7 @@
         </div>
 
 
-        <div class="cart-right">
+        <div class="cart-right" data-aos="fade-up">
           <div class="cart-free-delivery">
             <p>&#x2705</p>
             <p>Your order qualifies for FREE Shipping. <b>Choose this option at checkout. </b>See details</p>
@@ -184,6 +185,14 @@
         <img src="assets/amazon_logo.png" width="100" alt="..">
         <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 200
+      });
+    </script>
     
 </body>
 </html>
