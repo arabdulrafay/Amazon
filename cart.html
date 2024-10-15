@@ -11,6 +11,10 @@
 </head>
 <body>
 
+    <!-- Pre Loader -->
+
+    <div id="preloader"></div>
+    
   <!-- Navbar -->
 
     <nav data-aos="fade-down">
@@ -205,6 +209,13 @@
       AOS.init({
         duration: 1000,
         offset: 200
+      });
+    </script>
+    <script>
+      const loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
       });
     </script>
     

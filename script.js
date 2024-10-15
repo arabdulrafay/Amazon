@@ -48,9 +48,7 @@ for (const item of scrollContainer) {
     })
 }
 
-window.onload = function()
-{
-    setTimeout(function()
+function abc()
 {
     alert(`                         Important Note : Must read 
     "Only these pages are created, and they are working properly."
@@ -60,5 +58,12 @@ window.onload = function()
 
 
                             Now see my designing & enjoy.....`)
-})
 }
+
+abc();
+
+    const loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    });

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="product.css" />
   </head>
   <body>
+    <!-- Pre Loader -->
+
+    <div id="preloader"></div>
 
     <!-- Navbar -->
 
@@ -58,8 +61,8 @@
         <h1>& Orders</h1>
       </div>
 
-      <a href="signin.html" class="mob-user-icon" style="display: none;">
-        <img src="assets/user.png" alt="..">
+      <a href="signin.html" class="mob-user-icon" style="display: none">
+        <img src="assets/user.png" alt=".." />
       </a>
 
       <a href="cart.html" class="nav-cart">
@@ -82,7 +85,9 @@
       <p>Sell</p>
     </div>
 
-    <p class="breadcrum" data-aos="fade-down">Video Games > PC > Accessories > Headset</p>
+    <p class="breadcrum" data-aos="fade-down">
+      Video Games > PC > Accessories > Headset
+    </p>
 
     <!-- content -->
 
@@ -178,7 +183,7 @@
           <p><b>Connectivity Technology</b></p>
           <p>Wired</p>
         </div>
-        <hr>
+        <hr />
 
         <!-- Product Desc -->
 
@@ -277,7 +282,7 @@
           <p>Payment</p>
           <p><span>Secure transaction</span></p>
         </div>
-        <hr>
+        <hr />
         <button class="product-add-list">Add to List</button>
       </div>
     </div>
@@ -425,16 +430,15 @@
     <!-- Footer -->
 
     <footer class="product-footer">
-        <img src="assets/amazon_logo.png" width="100" alt="..">
-        <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+      <img src="assets/amazon_logo.png" width="100" alt=".." />
+      <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
     </footer>
-
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 1000,
-        offset: 200
+        offset: 200,
       });
     </script>
 
@@ -447,6 +451,13 @@
           item.scrollLeft += evt.deltaY;
         });
       }
+    </script>
+    <script>
+      const loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
     </script>
   </body>
 </html>

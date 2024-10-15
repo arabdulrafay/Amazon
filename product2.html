@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="product.css" />
   </head>
   <body>
+    
+    <!-- Pre Loader -->
 
+    <div id="preloader"></div>
+    
     <!-- Navbar -->
 
     <nav data-aos="fade-down">
@@ -388,6 +392,13 @@
           item.scrollLeft += evt.deltaY;
         });
       }
+    </script>
+    <script>
+      const loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
     </script>
   </body>
 </html>
